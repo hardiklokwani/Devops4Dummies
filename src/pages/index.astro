@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Home">
+	<h1>Welcome to DevOps4Dummies</h1>
+	<p class="intro">
+		Your gateway to practical DevOps knowledge and real-world experiences. 
+		Here you'll find detailed tutorials, project implementations, and insights into DevOps practices.
+	</p>
+
+	<div class="content-sections">
+		<section>
+			<h2>Blogs</h2>
+			<p>Practical tutorials and insights about DevOps practices. Learn from real-world experiences and stay updated with the latest trends.</p>
+			<a href="/blogs" class="section-link">Read Articles →</a>
+		</section>
+
+		<section>
+			<h2>Projects</h2>
+			<p>Explore real-world DevOps projects and implementations. Get hands-on experience with various tools and technologies.</p>
+			<a href="/projects" class="section-link">View Projects →</a>
+		</section>
+
+		<section>
+			<h2>About</h2>
+			<p>Learn more about the person behind DevOps4Dummies and the mission to make DevOps knowledge accessible to everyone.</p>
+			<a href="/about" class="section-link">Learn More →</a>
+		</section>
+	</div>
+</Layout>
+
+<style>
+	.intro {
+		font-size: 1.2rem;
+		margin-bottom: 3rem;
+	}
+
+	.content-sections section {
+		margin-bottom: 3rem;
+	}
+
+	.section-link {
+		color: var(--accent-color);
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	.section-link:hover {
+		text-decoration: underline;
+	}
+</style>

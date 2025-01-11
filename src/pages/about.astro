@@ -1,0 +1,102 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About">
+	<div class="profile-header">
+		<div class="profile-image-container">
+			<img src="https://picsum.photos/seed/profile/200/200" alt="Profile photo" class="profile-image" />
+		</div>
+	</div>
+
+	<h1>About Me</h1>
+	<div class="about-content">
+		<section>
+			<h2>Background</h2>
+			<p>
+				I'm a DevOps Engineer passionate about automation, infrastructure, and helping others learn DevOps practices.
+				With experience in various tools and technologies, I create content to make DevOps concepts accessible to everyone.
+			</p>
+		</section>
+
+		<section>
+			<h2>Skills</h2>
+			<div class="skills">
+				<div class="skill-group">
+					<h3>Infrastructure</h3>
+					<p>AWS • Terraform • Docker • Kubernetes</p>
+				</div>
+				<div class="skill-group">
+					<h3>CI/CD</h3>
+					<p>Jenkins • GitHub Actions • GitLab CI</p>
+				</div>
+				<div class="skill-group">
+					<h3>Monitoring</h3>
+					<p>Prometheus • Grafana • ELK Stack</p>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h2>Contact</h2>
+			<div class="contact-links">
+				<a href="https://github.com/yourusername" target="_blank">GitHub</a>
+				<a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+				<a href="mailto:your.email@example.com">Email</a>
+			</div>
+		</section>
+	</div>
+</Layout>
+
+<style>
+	.profile-header {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 2rem;
+	}
+
+	.profile-image-container {
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		overflow: hidden;
+		border: 4px solid var(--accent-color);
+	}
+
+	.profile-image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.about-content section {
+		margin-bottom: 3rem;
+	}
+
+	.skills {
+		margin-top: 1.5rem;
+	}
+
+	.skill-group {
+		margin-bottom: 2rem;
+	}
+
+	.skill-group p {
+		color: var(--accent-color);
+	}
+
+	.contact-links {
+		display: flex;
+		gap: 2rem;
+	}
+
+	.contact-links a {
+		color: var(--accent-color);
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	.contact-links a:hover {
+		text-decoration: underline;
+	}
+</style>

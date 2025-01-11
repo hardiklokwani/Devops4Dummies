@@ -1,0 +1,78 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Blogs">
+	<h1>Blog Posts</h1>
+	<p>Latest articles and tutorials about DevOps practices and tools.</p>
+
+	<div class="blog-list">
+		<article class="blog-post">
+			<div class="blog-header">
+				<img src="https://picsum.photos/seed/docker/800/400" alt="Docker containers visualization" class="blog-image" />
+			</div>
+			<h2>Getting Started with Docker</h2>
+			<div class="post-meta">January 15, 2024</div>
+			<p>A comprehensive guide to understanding Docker containers and basic commands...</p>
+			<a href="#" class="read-more">Read More →</a>
+		</article>
+
+		<article class="blog-post">
+			<div class="blog-header">
+				<img src="https://picsum.photos/seed/kubernetes/800/400" alt="Kubernetes cluster diagram" class="blog-image" />
+			</div>
+			<h2>Kubernetes for Beginners</h2>
+			<div class="post-meta">January 10, 2024</div>
+			<p>Learn the basics of Kubernetes orchestration and how to manage containers at scale...</p>
+			<a href="#" class="read-more">Read More →</a>
+		</article>
+	</div>
+</Layout>
+
+<style>
+	.blog-list {
+		margin-top: 2rem;
+	}
+
+	.blog-post {
+		margin-bottom: 3rem;
+		padding-bottom: 2rem;
+		border-bottom: 1px solid var(--border-color);
+	}
+
+	.blog-post:last-child {
+		border-bottom: none;
+	}
+
+	.blog-header {
+		margin-bottom: 1.5rem;
+	}
+
+	.blog-image {
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+		border-radius: 8px;
+		transition: transform 0.3s ease;
+	}
+
+	.blog-image:hover {
+		transform: scale(1.02);
+	}
+
+	.post-meta {
+		color: var(--accent-color);
+		margin-bottom: 1rem;
+		font-size: 0.9rem;
+	}
+
+	.read-more {
+		color: var(--accent-color);
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	.read-more:hover {
+		text-decoration: underline;
+	}
+</style>

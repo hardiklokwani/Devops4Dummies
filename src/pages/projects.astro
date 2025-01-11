@@ -1,0 +1,94 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Projects">
+	<h1>Projects</h1>
+	<p>A collection of my DevOps projects and implementations.</p>
+
+	<div class="projects-list">
+		<article class="project">
+			<div class="project-header">
+				<img src="https://picsum.photos/seed/jenkins/800/400" alt="Jenkins Pipeline visualization" class="project-image" />
+			</div>
+			<h2>CI/CD Pipeline with Jenkins</h2>
+			<p>Automated CI/CD pipeline for a microservices application using Jenkins and Docker.</p>
+			<div class="project-meta">
+				<div class="technologies">
+					Jenkins • Docker • GitHub Actions
+				</div>
+				<div class="links">
+					<a href="#" class="project-link">View Project →</a>
+				</div>
+			</div>
+		</article>
+
+		<article class="project">
+			<div class="project-header">
+				<img src="https://picsum.photos/seed/terraform/800/400" alt="Infrastructure diagram" class="project-image" />
+			</div>
+			<h2>Infrastructure as Code</h2>
+			<p>Infrastructure as Code implementation using Terraform and AWS services.</p>
+			<div class="project-meta">
+				<div class="technologies">
+					Terraform • AWS • Ansible
+				</div>
+				<div class="links">
+					<a href="#" class="project-link">View Project →</a>
+				</div>
+			</div>
+		</article>
+	</div>
+</Layout>
+
+<style>
+	.projects-list {
+		margin-top: 2rem;
+	}
+
+	.project {
+		margin-bottom: 3rem;
+		padding-bottom: 2rem;
+		border-bottom: 1px solid var(--border-color);
+	}
+
+	.project:last-child {
+		border-bottom: none;
+	}
+
+	.project-header {
+		margin-bottom: 1.5rem;
+	}
+
+	.project-image {
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+		border-radius: 8px;
+		transition: transform 0.3s ease;
+	}
+
+	.project-image:hover {
+		transform: scale(1.02);
+	}
+
+	.project-meta {
+		margin-top: 1rem;
+	}
+
+	.technologies {
+		color: var(--accent-color);
+		font-size: 0.9rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.project-link {
+		color: var(--accent-color);
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	.project-link:hover {
+		text-decoration: underline;
+	}
+</style>
